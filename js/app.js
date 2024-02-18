@@ -9,13 +9,18 @@ buyTicketBtnClick.addEventListener('click', function () {
 let perTicketValue = 550;
 let seatCountValue = 0;
 let className = 'Economy';
+let totalAvailableSeat = 40;
+
 const ticketSeat = document.querySelectorAll('.ticket');
 for (const ticket of ticketSeat) {
     // console.log(ticket)
     ticket.addEventListener('click', function () {
+
+      
+
         const ticketText = ticket.innerText;
         seatCountValue += 1;
-
+        totalAvailableSeat -= 1;
         // append ticket name
         const seatDiv = document.getElementById('seat');
         const ticketName = ticket.innerText;
@@ -34,14 +39,27 @@ for (const ticket of ticketSeat) {
         pPrice.innerText = perTicketValue;
         priceDiv.appendChild(pPrice);
 
+        // get and set total price
+        const totalPrice = parseFloat(document.getElementById('total-price').innerText);
+        let sumTotalPrice = (perTicketValue + totalPrice).toFixed(2);
+        document.getElementById('total-price').innerText = sumTotalPrice;
 
+        const buttons = document.getElementById('ticket');
 
+       
 
-
-        setInnerText('seat-count', seatCountValue)
-
+        setInnerText('seat-40', totalAvailableSeat);
+        setInnerText('seat-count', seatCountValue);
+        
+    
+        const classBg = ticket.classList.add('bg-[#1DD100]','text-white')
+        const classRemove = ticket.classList.remove('bg-gray-200')
     });
 }
+
+
+// set button background 
+
 
 
 // setup inner text
