@@ -99,7 +99,7 @@
                     <small>Use by March 2024</small>
                 </div>
                 <div class="text-center">
-                    <h2 class="font-bold text-2xl">NEW15</h2>
+                    <h2 class="font-bold text-2xl">Couple 20</h2>
                     <p>Coupon Code</p>
 
                 </div>
@@ -214,7 +214,7 @@
                     <button class="bg-gray-200 py-3 rounded-xl ticket">C2</button>
                     <button class="bg-gray-200 py-3 rounded-xl ticket">C3</button>
                     <button class="bg-gray-200 py-3 rounded-xl ticket">C4</button>
-                    <button  class="">D</button>
+                    <button class="">D</button>
                     <button class="bg-gray-200 py-3 rounded-xl ticket">D1</button>
                     <button class="bg-gray-200 py-3 rounded-xl ticket">D2</button>
                     <button class="bg-gray-200 py-3 rounded-xl ticket">D3</button>
@@ -244,7 +244,7 @@
                     <button class="bg-gray-200 py-3 rounded-xl ticket">J2</button>
                     <button class="bg-gray-200 py-3 rounded-xl ticket">J3</button>
                     <button class="bg-gray-200 py-3 rounded-xl ticket">J4</button>
-                    id="                id=""
+                   
                 </div>
 
 
@@ -288,12 +288,23 @@
                         <h2 class="text-xl font-bold">Total Price</h2>
                         <h2 class="text-xl font-bold">BDT <span id="total-price" class="text-xl font-bold">0</span></h2>
                     </div>
-                    <div class="flex justify-between bg-white px-2 rounded-xl mb-2">
+                    <div id="input-btn-value" class="flex justify-between bg-white px-2 rounded-xl mb-2">
                         <input class="outline-none p-4" type="text" name="" id="input-coupon"
                             placeholder="Enter your coupon">
                         <button id="apply-now" class="bg-[#1DD100] p-2 rounded-xl text-white font-bold">Apply
                             Now</button>
                     </div>
+
+                    <!-- add discount value start -->
+                    <div class="amount-title flex justify-between font-bold">
+                        <p id="discount-title"></p>
+
+                        <p id="discount-value" class=""></p>
+                    </div>
+
+                    <!-- add discount value div ent -->
+
+
                     <!-- grand total -->
                     <div class="total-price flex justify-between">
                         <h2 class="text-xl font-bold">Grand Total</h2>
@@ -313,8 +324,28 @@
                 <input class="outline-none border p-3 rounded-lg w-full" type="email" name="" id=""
                     placeholder="Enter your Email">
 
-                <button id="next"
-                    class="mt-4 w-full bg-[#1DD100] p-3 rounded-xl font-semibold text-2xl text-white">Next</button>
+                
+
+
+                    <!-- Open the modal using ID.showModal() method -->
+                    <button class="btn w-full bg-[#1DD100] p-3 rounded-xl font-semibold text-2xl text-white items-center justify-center flex flex-col" onclick="my_modal_1.showModal()">Next</button>
+
+                    <dialog id="my_modal_1" class="modal">
+                        
+                        <div class="modal-box text-center">
+                            <img src="./images/success.png" alt="" class="mx-auto mb-5">
+                            <h3 class="font-bold text-lg text-green-600 text-center">SUCCESS</h3>
+                            <p class="py-4 font-semibold">Thank you for Booking Our Bus Seats.
+                            We are working hard to find the best service and deals for you.</p>
+                            <p>Shortly you will find a confirmation in your email.</p>
+                            <div class="modal-action">
+                                <form method="dialog" class="mx-auto">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class=" bg-green-600 rounded-full px-4 py-2">Continue</button>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
 
 
                 <div class="flex justify-between mt-4 underline">
