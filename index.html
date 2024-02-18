@@ -13,8 +13,8 @@
 
 <body>
 
-    <header class="mb-8">
-        <nav class="px-20">
+    <header class="mb-8 ">
+        <nav class=" px-8 lg:px-20">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -35,7 +35,7 @@
                         </ul>
                     </div>
 
-                    <a class="font-bold text-3xl ">P-Ticket</a>
+                    <a class="font-bold text-3xl invisible lg:visible">P-Ticket</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -55,14 +55,14 @@
             </div>
         </nav>
         <!-- hero section -->
-        <div class="banner px-20 dis mb-24">
-            <div class="hero min-h-screen" style="background-image: url(./images/banner.png);">
+        <div class="banner px-8 py-4 lg:px-20 dis lg:mb-24">
+            <div class="hero bg-cover lg:bg-cover lg:min-h-screen rounded-3xl" style="background-image: url(./images/banner.png);">
                 <div class="bg-opacity-60"></div>
                 <div class="hero-content text-center text-neutral-content">
                     <div class="max-w-md">
-                        <h1 class="mb-5 text-4xl font-bold">End-to-End Travel with <br><span class="text-[#1DD100]">P
+                        <h1 class="mb-2 lg:mb-5 text-3xl lg:text-4xl font-semibold lg:font-bold">End-to-End Travel with <br><span class="text-[#1DD100]">P
                                 Paribahan</span></h1>
-                        <p class="mb-5">To ensure fastest communication among transport business network and travelers
+                        <p class="mb-2 lg:mb-5">To ensure fastest communication among transport business network and travelers
                             with
                             advance security and administrative
                             control</p>
@@ -75,24 +75,24 @@
     </header>
 
     <!-- Best offers for you section -->
-    <section class="px-20 py-20">
+    <section class=" px-8 lg:px-20 py-8 lg:py-20">
         <h2 class="text-center text-3xl font-semibold mb-6">Best offers for you</h2>
         <div class="grid grid-cols-2 gap-9">
 
-            <div class="flex gap-9 bg-[#FFBF0F] items-center justify-between py-8 px-16 rounded-3xl">
-                <div>
-                    <h2 class="font-bold text-2xl">15% OFF</h2>
+            <div class="flex flex-col lg:flex lg:flex-row  bg-[#FFBF0F] items-center justify-between py-4 lg:py-8 px-8 lg:px-16 rounded-3xl">
+                <div class="">
+                    <h2 class="lg:font-bold font-semibold lg:text-2xl">15% OFF</h2>
                     <p>On your next purchase</p>
                     <small>Use by March 2024</small>
                 </div>
                 <div class="text-center">
-                    <h2 class="font-bold text-2xl">NEW15</h2>
+                    <h2 class="lg:font-bold font-semibold text-xl lg:text-2xl">NEW15</h2>
                     <p>Coupon Code</p>
 
                 </div>
             </div>
 
-            <div class="flex gap-9 bg-[#F78C9C] items-center justify-between py-8 px-16 rounded-3xl ">
+            <div class=" flex flex-col lg:flex lg:flex-row bg-[#F78C9C] items-center justify-between py-8 px-16 rounded-3xl ">
                 <div>
                     <h2 class="font-bold text-2xl">15% OFF</h2>
                     <p>On your next purchase</p>
@@ -113,8 +113,11 @@
 
     </section>
 
+
+
+
     <!-- P.H Paribahan Section -->
-    <section id="ticket-section" class="px-20 py-20 bg-[#F7F8F8] rounded-t-lg">
+    <section id="ticket-section" class=" lg:px-20 px-8 lg:py-20 py-8 bg-[#F7F8F8] rounded-t-lg">
         <h2 class="text-center font-bold text-2xl mb-4">P.H Paribahan</h2>
         <p class="text-center mb-5 ">To ensure fastest communication among transport business network and travelers with
             advance security and
@@ -123,12 +126,12 @@
 
         <!-- greenline paribahan -->
 
-        <div class="grid grid-cols-3 ">
+        <div class="lg:grid lg:grid-cols-3 ">
 
-            <div class="grid  col-span-2 bg-white p-4 rounded-xl">
+            <div class="lg:grid  lg:col-span-2 grid col-span-1 bg-white p-4 rounded-xl">
 
-                <div class="flex items-center justify-between mb-5">
-                    <div class="flex gap-2">
+                <div class="lg:flex lg:flex-row flex flex-col items-center justify-between mb-5">
+                    <div class="lg:flex lg:flex-row flex flex-col gap-2 mb-3">
                         <img src="./images/bus-logo.png" alt="">
                         <div>
                             <h2 class="text-2xl font-bold">Green Line Paribahan</h2>
@@ -155,10 +158,10 @@
                         <p>9:00 PM</p>
                     </div>
                     <hr>
-                    <div class="flex justify-between">
-                        <p class="bg-gray-300 p-2 rounded-lg">Boarding Point - Laxmipur</p>
-                        <p class="bg-gray-300 p-2 rounded-lg">Dropping Point - Bogura</p>
-                        <p class="bg-gray-300 p-2 rounded-lg">Est. Time - 11 Hour</p>
+                    <div class="flex flex-col lg:flex lg:flex-row justify-between">
+                        <p class="mb-3 bg-gray-300 p-2 rounded-lg">Boarding Point - Laxmipur</p>
+                        <p class="mb-3 bg-gray-300 p-2 rounded-lg">Dropping Point - Bogura</p>
+                        <p class="mb-3 bg-gray-300 p-2 rounded-lg">Est. Time - 11 Hour</p>
                     </div>
                 </div>
             </div>
@@ -174,7 +177,7 @@
 
         </div>
         <!-- select your seats section -->
-        <div class="bg-white grid grid-cols-3 gap-5 mt-10 p-2 rounded-xl">
+        <div class="bg-white lg:grid lg:grid-cols-3 gap-5 mt-10 p-2 rounded-xl">
 
             <!-- select your seat 1st part -->
             <div class=" grid col-span-2">
@@ -291,7 +294,7 @@
                     <div id="input-btn-value" class="flex justify-between bg-white px-2 rounded-xl mb-2">
                         <input class="outline-none p-4" type="text" name="" id="input-coupon"
                             placeholder="Enter your coupon">
-                        <button id="apply-now" class="bg-[#1DD100] p-2 rounded-xl text-white font-bold">Apply
+                        <button id="apply-now" class="bg-[#1DD100] px-2 rounded-xl text-white font-bold">Apply
                             Now</button>
                     </div>
 
