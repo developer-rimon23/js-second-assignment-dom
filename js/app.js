@@ -134,10 +134,8 @@ applyCouponBtn.addEventListener('click', function (e) {
         alert('Invalid Coupon code. Please provide and valid coupon code.')
     }
 
-
     document.getElementById('input-coupon').value = '';
 });
-
 
 
 
