@@ -16,6 +16,9 @@ for (const ticket of ticketSeat) {
     // console.log(ticket)
     ticket.addEventListener('click', function () {
 
+        if (ticketSeat.length === 4) {
+           
+        }
       
 
         const ticketText = ticket.innerText;
@@ -46,14 +49,15 @@ for (const ticket of ticketSeat) {
 
         const buttons = document.getElementById('ticket');
 
-       
-
+    
         setInnerText('seat-40', totalAvailableSeat);
         setInnerText('seat-count', seatCountValue);
         
-    
         const classBg = ticket.classList.add('bg-[#1DD100]','text-white')
-        const classRemove = ticket.classList.remove('bg-gray-200')
+        const classRemove = ticket.classList.remove('bg-gray-200');
+        const classDisable = ticket.setAttribute('disabled','');
+
+
     });
 }
 
