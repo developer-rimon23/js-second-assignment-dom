@@ -88,7 +88,7 @@ applyCouponBtn.addEventListener('click', function (e) {
         // set discount title dynamically
         const discountTitle = document.getElementById('discount-title');
         const createDiscountTitle = document.createElement('p');
-        createDiscountTitle.innerText = 'Discount Amount';
+        createDiscountTitle.innerText = 'Discount Price';
         discountTitle.appendChild(createDiscountTitle);
         // set discount value
         const discountValue = document.getElementById('discount-value');
